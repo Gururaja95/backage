@@ -1,21 +1,14 @@
-import express from "express"
-import dotenv from "dotenv"
-import stripe from "stripe"
-
-
-dotenv.config();
-
+const express = require("express");
 const app = express();
 
-app.use(express.static("public"));
-app.use(express.json());
 
-app.get("/", (req, res) =>{
-    res.sendFile("index.js", { root: "public"});
+app.get("/", (req, res) => {
+res.status(200).send("Fragrance");
 });
-
-let stripeGateway = stripe(process.env.stripe_key);
-
-app.listen(3000, () => {
-    console.log("listing on port 3000");
+app.get("/about", (req, res) => {
+res.status(200).send("About Page");
+});
+const port = 3000;
+app.listen(port, () => {
+console.log('Site is running on port ${port}`);
 });
