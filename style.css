@@ -1033,7 +1033,7 @@ iframe {
 
 /* //....... Media Queries .......// */
 
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     .navbar {
         opacity: 0.95;
     }
@@ -1099,10 +1099,10 @@ iframe {
         display: flex;
         flex-direction: column;
         /* margin-left: -40px;
-        padding-left: 40px; 
+        padding-left: 40px; */
         text-align: center;
         transition: transform 0.5s ease-in-out;
-        /* box-shadow: 5px 0px 10px 0px #aaa; 
+        /* box-shadow: 5px 0px 10px 0px #aaa; */
         overflow: scroll;
     }
     .navbar .menu-items li {
@@ -1142,23 +1142,18 @@ iframe {
 }
 
 @media (max-width: 500px) {
-    .navbar-container input[type="checkbox"]:checked~.navbar-container img {
-        display:flex;
-    }
+    
 }
 
 @media (max-width: 500px) {
-    /*.head {
-        display:none;
-    }
     .top-txt .head p,
     .top-txt .head a {
         font-size: 10px;
     }
-    /*.home_txt h2,
+    .home_txt h2,
     .home_txt .home_label p {
-        display:none;
-    }*/
+        font-size: 10px;
+    }
     #point{
         font-size: 10px;
     }
@@ -1172,12 +1167,11 @@ iframe {
         padding: 7px 7px;
         font-size: 10px;
     }
-    /*.home_txt i {
-        display:none;
+    .home_txt i {
+        font-size: 10px;
     }
     .home_txt .home_social_icons {
         display: flex;
-        /*display:none;
     }
     .menu-items {
         margin-right: 0;
@@ -1209,17 +1203,14 @@ iframe {
 }
 
 @media(min-width: 501px) and (max-width: 768px) {
-    /*.head {
-        display:none;
-    }*
     .top-txt .head p,
     .top-txt .head a {
         font-size: 10px;
     }
-    /*.home_txt h2,
+    .home_txt h2,
     .home_txt .home_label p {
-        display:none;
-    }*
+        font-size: 10px;
+    }
     .home_txt {
         position: absolute;
         top: 20%;
@@ -1230,17 +1221,17 @@ iframe {
         padding: 7px 7px;
         font-size: 10px;
     }
-    /*.home_txt i {
-        display: none;
-    }*
+    .home_txt i {
+        font-size: 10px;
+    }
     .home_txt .home_social_icons {
         display: flex;
-        /*display: none;*
+
     }
     .menu-items {
         margin-right: 0;
     }
-    .best-seller {
+    .best-seller {                             
         display: flex;
         flex-direction: column;
     }
@@ -1269,7 +1260,7 @@ iframe {
     .header {
         height: 90vmax;
     }
-}*/
+}
 
 
 /* //....... Media Queries For Contact .......// */
